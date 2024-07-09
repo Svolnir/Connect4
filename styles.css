@@ -1,0 +1,73 @@
+:root {
+    --mainBGColor: rgb(14, 0, 21);
+    --boardColor: rgb(0, 0, 175);
+    --playerColor1: rgb(189, 0, 7);
+    --playerColor2: rgba(231, 231, 0);
+}
+
+body {
+    background-color: var(--mainBGColor);
+}
+
+.board {
+    
+    width: 91vw;
+    height: 78vw;
+    display: flex;
+    max-width: 91vh;
+    max-height: 78vh;
+    margin: auto;
+    position: absolute;
+    top:0;bottom:0;
+    left:0;right:0;
+}
+
+.left-edge {
+    padding-left: 1%;
+}
+.right-edge {
+    padding-right: 1%;
+}
+
+.boardCol {
+    background-color: var(--boardColor); 
+    height: 98%;
+    width: 14%;
+    display: flex;
+    flex-direction: column-reverse;
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+
+.space {
+    width: 77%;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    margin: auto;
+}
+
+.empty {
+    background-color: var(--mainBGColor);
+}
+
+.p1 {
+    background-color: var(--playerColor1)!important;
+}
+
+.p2 {
+    background-color: var(--playerColor2);
+}
+
+button {
+    margin: 7px;
+    background-color: aliceblue;
+}
+.buttonholder {
+    display: flex;
+    width: 100vw;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: 2vh;
+    margin: 0 auto 0 auto;
+}
