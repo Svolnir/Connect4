@@ -16,7 +16,7 @@ body {
     display: flex;
     max-width: 91vh;
     max-height: 78vh;
-    margin: auto;
+    margin: 2vh auto auto auto;
     position: absolute;
     top:0;bottom:0;
     left:0;right:0;
@@ -69,5 +69,5 @@ button {
     justify-content: center;
     position: absolute;
     bottom: 2vh;
-    margin: 0 auto 0 auto;
+    margin: auto auto 0 auto;
 }
