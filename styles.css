@@ -1,8 +1,10 @@
 :root {
     --mainBGColor: rgb(14, 0, 21);
     --boardColor: rgb(0, 0, 175);
+    --borderColor: rgb(0, 0, 140);
     --playerColor1: rgb(189, 0, 7);
-    --playerColor2: rgba(231, 231, 0);
+    --playerColor2: rgb(231, 231, 0);
+    --button-color: rgb(252, 252, 231);
 }
 
 body {
@@ -16,10 +18,11 @@ body {
     display: flex;
     max-width: 91vh;
     max-height: 78vh;
-    margin: 2vh auto auto auto;
+    margin: 7vh auto 15vh auto;
     position: absolute;
     top:0;bottom:0;
     left:0;right:0;
+    border: 3px solid var(--borderColor);
 }
 
 .left-edge {
@@ -44,30 +47,50 @@ body {
     aspect-ratio: 1;
     border-radius: 50%;
     margin: auto;
+
 }
 
 .empty {
     background-color: var(--mainBGColor);
+
 }
 
 .p1 {
-    background-color: var(--playerColor1)!important;
+    background-color: var(--playerColor1);
 }
 
 .p2 {
     background-color: var(--playerColor2);
 }
 
-button {
-    margin: 7px;
-    background-color: aliceblue;
+.winning {
+    box-shadow: 0 0 calc((0.7vh + 0.7vw) / 2) calc((0.77vh + 0.77vw) / 2) rgb(245, 245, 252);
 }
+
 .buttonholder {
+    width: 98vw;
+    height: 10vh;
     display: flex;
-    width: 100vw;
-    align-items: center;
-    justify-content: center;
     position: absolute;
-    bottom: 2vh;
-    margin: auto auto 0 auto;
+    bottom: 0;
+    margin: 0 auto 7px auto;
+}
+
+button {
+    width: 70px;
+    height: 25px;
+    background-color: var(--button-color);
+    color: var(--mainBGColor);
+    margin-top: auto;
+    margin-bottom: 7px;
+}
+
+#resetBtn {
+    margin-left: auto;
+    margin-right: 7px;
+}
+
+#undoBtn {
+    margin-left: 7px;
+    margin-right: auto;
 }
